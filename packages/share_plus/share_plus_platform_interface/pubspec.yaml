@@ -3,6 +3,7 @@ description: A common platform interface for the share_plus plugin.
 version: 3.2.1
 homepage: https://plus.fluttercommunity.dev/
 repository: https://github.com/fluttercommunity/plus_plugins/tree/main/packages/
+publish_to: "none"
 
 dependencies:
   cross_file: ^0.3.3+4
@@ -12,7 +13,10 @@ dependencies:
   mime: ^1.0.4
   plugin_platform_interface: ^2.1.4
   path_provider: ^2.0.14
-  uuid: ^3.0.7
+  uuid:
+    git:
+      url: https://github.com/KomodoPlatform/dart-uuid.git
+      ref: 832f38af9e4a676d1f47c302785e8a00d3fc72a9 #3.0.6
 
 dev_dependencies:
   flutter_test:
